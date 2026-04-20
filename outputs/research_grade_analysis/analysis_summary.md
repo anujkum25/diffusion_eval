@@ -1,9 +1,9 @@
 # Prompt Performance Analysis Summary
 
 Input CSV: `C:\Users\anujq\OneDrive\Documents\Amrita\curated_dataset_diffusion\diffusion_evaluation\manual_eval_with_com_columns.csv`
-Rows: 2,199
+Rows: 2,027
 Models: 11
-Datasets: 4
+Datasets: 3
 Metric groups: com, d2, d3, d4
 
 ## Top Models By Common Composite

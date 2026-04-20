@@ -24,8 +24,3 @@ dataset3,sd_turbo,1.0,1.0,1.0,1.0,0.0,157
 dataset3,stable-diffusion-v1-5,1.0,1.0,1.0,1.0,0.0,56
 dataset4,sd_turbo,1.0,1.0,1.0,1.0,0.0,126
 dataset4,stable-diffusion-v1-5,1.0,1.0,1.0,1.0,0.0,70
-dataset2_hindi,flux1-dev,,,,,,0
-dataset2_hindi,flux1_1_pro,,,,,,0
-dataset2_hindi,openai_dalle_3,,,,,,0
-dataset2_hindi,openai_gpt_image_1,,,,,,0
-dataset2_hindi,sd_turbo,,,,,,0

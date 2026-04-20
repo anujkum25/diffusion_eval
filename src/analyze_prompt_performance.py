@@ -552,6 +552,12 @@ def main() -> None:
     parser.add_argument("--csv", default=DEFAULT_CSV, help="Path to manual evaluation CSV.")
     parser.add_argument("--out", default=DEFAULT_OUT, help="Output directory.")
     parser.add_argument("--n-bootstrap", type=int, default=2000, help="Bootstrap samples for CIs.")
+    parser.add_argument(
+        "--exclude-datasets",
+        nargs="*",
+        default=["dataset2_hindi"],
+        help="Dataset sources to exclude before analysis. Default: dataset2_hindi.",
+    )
     args = parser.parse_args()
 
     configure_style()
@@ -573,6 +579,12 @@ def main() -> None:
     prompt_col = ids["prompt"]
     category_col = ids["category"]
     super_col = ids["super_category"]
+
+    if args.exclude_datasets:
+        before = len(df)
+        df = df[~df[dataset_col].isin(args.exclude_datasets)].copy()
+        removed = before - len(df)
+        print(f"Excluded datasets {args.exclude_datasets}: removed {removed:,} rows.")
 
     df[model_col] = df[model_col].astype(str).str.strip().replace(MODEL_RENAMES)
     metric_groups = detect_metric_groups(df)
