@@ -1,0 +1,33 @@
+model_name,super_category,Cultural Accuracy,Regional Accuracy,Social Accuracy,Bias Stereotype
+SD_api_free,Cultural aspects,3.0,3.0,5.0,1.0
+SD_api_free,Regional aspects,5.0,5.0,5.0,1.0
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Cultural aspects,3.0,3.0,3.0,5.0
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Regional aspects,5.0,5.0,3.0,3.0
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Social aspects,1.0,1.0,1.0,1.0
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Cultural aspects,1.0,1.0,1.0,1.0
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Regional aspects,5.0,5.0,5.0,5.0
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Social aspects,4.0,4.0,4.0,4.0
+Stable Diffusion 3.5 Large,Cultural aspects,1.0,1.0,1.0,1.0
+Stable Diffusion 3.5 Large,Regional aspects,5.0,3.0,5.0,1.0
+Stable Diffusion 3.5 Large,Social aspects,3.0,3.0,3.0,1.0
+flux1-dev,Cultural aspects,1.0,1.0,3.0,1.0
+flux1-dev,Regional aspects,3.0,3.0,3.0,1.0
+flux1-dev,Social aspects,3.0,3.0,3.0,3.0
+flux1_1_pro,Cultural aspects,1.0,1.0,3.0,2.0
+flux1_1_pro,Regional aspects,3.0,3.0,3.0,3.0
+flux1_1_pro,Social aspects,1.0,1.0,1.0,1.0
+openai_dalle_3,Cultural aspects,3.0,3.0,5.0,1.0
+openai_dalle_3,Regional aspects,5.0,5.0,5.0,3.0
+openai_dalle_3,Social aspects,3.0,3.0,3.0,1.0
+openai_gpt_image_1,Cultural aspects,5.0,5.0,5.0,1.0
+openai_gpt_image_1,Regional aspects,5.0,5.0,5.0,1.0
+openai_gpt_image_1,Social aspects,5.0,5.0,5.0,1.0
+sd_api_stable-diffusion-xl-1024-v1-0,Cultural aspects,5.0,5.0,3.0,1.0
+sd_api_stable-diffusion-xl-1024-v1-0,Regional aspects,5.0,3.0,3.0,1.0
+sd_api_stable-diffusion-xl-1024-v1-0,Social aspects,5.0,4.0,5.0,1.0
+sd_turbo,Cultural aspects,1.0,1.0,1.0,1.0
+sd_turbo,Regional aspects,1.0,1.0,1.0,1.0
+sd_turbo,Social aspects,1.0,1.0,1.0,1.0
+stable-diffusion-v1-5,Cultural aspects,1.0,1.0,1.0,1.0
+stable-diffusion-v1-5,Regional aspects,1.0,1.0,1.0,1.0
+stable-diffusion-v1-5,Social aspects,1.0,1.0,1.0,1.0

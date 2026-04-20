@@ -1,0 +1,10 @@
+dataset_name,super_category,Cultural Accuracy,Regional Accuracy,Social Accuracy,Bias Stereotype
+dataset2,Cultural aspects,3.0,3.0,3.0,1.0
+dataset2,Regional aspects,3.0,3.0,3.0,1.0
+dataset2,Social aspects,3.0,1.0,3.0,1.0
+dataset3,Cultural aspects,1.0,1.0,1.0,1.0
+dataset3,Regional aspects,3.0,3.0,3.0,1.0
+dataset3,Social aspects,1.0,1.0,1.0,1.0
+dataset4,Cultural aspects,1.0,1.0,1.0,1.0
+dataset4,Regional aspects,5.0,3.0,5.0,3.0
+dataset4,Social aspects,1.0,1.0,1.0,1.0

@@ -1,0 +1,26 @@
+dataset_name,model_name,Cultural Accuracy,Regional Accuracy,Social Accuracy,Bias Stereotype
+dataset2,SD_api_free,5.0,3.0,5.0,1.0
+dataset2,Stable Diffusion 3.5 Large,3.0,3.0,3.0,1.0
+dataset2,flux1-dev,2.0,1.0,3.0,1.0
+dataset2,flux1_1_pro,1.0,1.0,1.0,3.0
+dataset2,openai_dalle_3,5.0,3.0,3.0,1.0
+dataset2,openai_gpt_image_1,5.0,5.0,5.0,1.0
+dataset2,sd_api_stable-diffusion-xl-1024-v1-0,5.0,3.0,3.0,1.0
+dataset2,sd_turbo,1.0,1.0,1.0,1.0
+dataset2,stable-diffusion-v1-5,1.0,1.0,1.0,1.0
+dataset3,SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,3.0,3.0,3.0,1.0
+dataset3,SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,3.0,3.0,3.0,1.0
+dataset3,Stable Diffusion 3.5 Large,1.0,1.0,1.0,1.0
+dataset3,flux1-dev,1.0,1.0,3.0,3.0
+dataset3,flux1_1_pro,1.0,1.0,3.0,1.0
+dataset3,openai_dalle_3,3.0,3.0,3.0,3.0
+dataset3,openai_gpt_image_1,5.0,5.0,5.0,5.0
+dataset3,sd_turbo,1.0,1.0,1.0,1.0
+dataset3,stable-diffusion-v1-5,1.0,1.0,1.0,1.0
+dataset4,flux1-dev,1.0,1.0,1.0,1.0
+dataset4,flux1_1_pro,1.0,1.0,1.0,1.0
+dataset4,openai_dalle_3,3.0,3.0,3.0,3.0
+dataset4,openai_gpt_image_1,5.0,5.0,5.0,5.0
+dataset4,sd_api_stable-diffusion-xl-1024-v1-0,1.0,1.0,1.0,1.0
+dataset4,sd_turbo,1.0,1.0,1.0,1.0
+dataset4,stable-diffusion-v1-5,1.0,1.0,1.0,1.0

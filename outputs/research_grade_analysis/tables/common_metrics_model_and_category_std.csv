@@ -1,0 +1,289 @@
+model_name,category,Cultural Accuracy,Regional Accuracy,Social Accuracy,Bias Stereotype
+SD_api_free,Indian Festivals & Rituals,1.2507554652906585,1.3448775602908665,1.4744195615489715,0.0
+SD_api_free,Regional Diversity,1.2583057392117916,1.454876856186346,1.2649110640673518,0.806225774829855
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Art, History",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Art, Regional",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Arts, Music & Pop Culture",0.0,1.1547005383792517,1.1547005383792517,2.0
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Caste,,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Caste Discrimination,,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Caste, Dance, Religion",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Caste, Tradition",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Culture, Dance",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Culture, Oral Tradition",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Culture, Region",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Culture, Religion",2.8284271247461903,2.8284271247461903,2.8284271247461903,2.8284271247461903
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Daily Life & Social Context,0.0,0.0,0.0,0.0
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Diversity & Inclusion,1.4142135623730951,1.4142135623730951,1.4142135623730951,2.8284271247461903
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Education, Youth & Women",1.1547005383792517,1.1547005383792517,1.1547005383792517,2.3094010767585034
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Festival, Attire",0.0,0.0,0.0,0.0
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Festival, Food",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Folk Dance, Culture",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Folk, Festival",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Food, Religion",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Food, Tradition",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Handicraft, Culture",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Inclusion, Education",0.0,0.0,0.0,0.0
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Indian Festivals & Rituals,2.3094010767585034,2.3094010767585034,2.3094010767585034,2.3094010767585034
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"LGBTQ+, Religion",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"LGBTQ+, Tradition",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Music, Gender",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Northeast, Economy",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Occupation, Religion",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Occupations & Aspirations,2.0,2.0,2.0,2.0
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Pop Culture, Rural",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Protest, Religion",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Region, Childhood",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Regional Culture,,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Regional Diversity,1.1547005383792517,1.1547005383792517,2.3094010767585034,2.3094010767585034
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Religion,2.0,2.0,2.0,2.0
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Religion & Spirituality,0.0,0.0,0.0,1.1547005383792517
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Religion, Austerity",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Religion, Caste",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Religion, Compassion",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Religion, Craft",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Religion, Economy",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Religion, Education",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Religion, Minority",0.0,0.0,0.0,0.0
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Religion, Philosophy",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Religion, Plurality",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Religion, Syncretism",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Ritual, Folk Dance",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Ritual, Rural",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Rural, Water Crisis",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Signs, Language & Scripts",1.0350983390135313,1.0350983390135313,1.0350983390135313,2.070196678027062
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Sports, Region",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Tradition, Festival",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Tribal, Nature",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Tribal, Rural",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Tribal, Tradition",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Unity, Patriotism",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,"Urban Poverty, Religion",,,,
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,Water Crisis,,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Art, Region",0.0,0.0,0.0,0.0
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Art, Regional",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Art, Tribal",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Arts, Music & Pop Culture",0.0,0.0,0.0,0.0
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Attire, Region",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Caste Discrimination,,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Caste, Dance, Religion",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Culture, Dance",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Culture, Gender",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Culture, Marriage",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Culture, Oral Tradition",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Culture, Region",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Culture, Religion",2.8284271247461903,2.8284271247461903,2.8284271247461903,2.8284271247461903
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Daily Life & Social Context,0.7559289460184545,0.7559289460184545,0.7559289460184545,0.7559289460184545
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Diversity & Inclusion,0.0,0.0,0.0,0.0
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Education, Rural",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Education, Youth & Women",0.0,0.0,0.0,0.0
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Festival, Attire",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Festival, Food",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Folk Dance, Culture",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Food, Religion",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Handicraft, Culture",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"History, Education",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Inclusion, Education",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Indian Festivals & Rituals,0.0,0.0,0.0,0.0
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"LGBTQ+, Tradition",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Labor, Northeast",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Music, Gender",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Northeast, Economy",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Occupation, Faith",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Occupations & Aspirations,0.0,0.0,0.0,0.0
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Pop Culture, Rural",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Protest, Religion",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Region, Childhood",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Regional Diversity,1.1547005383792517,1.1547005383792517,2.3094010767585034,2.3094010767585034
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Religion,,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Religion & Spirituality,2.8284271247461903,1.4142135623730951,2.8284271247461903,2.8284271247461903
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Religion, Culture",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Religion, Discipline",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Religion, Economy",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Religion, Education",0.0,0.0,0.0,2.8284271247461903
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Religion, Plurality",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Religion, Region",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Religion, Syncretism",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Religion, Theatre",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Ritual, Folk Dance",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Rural, Labor",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Rural, Water Crisis",0.0,0.0,0.0,0.0
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Signs, Language & Scripts",1.9148542155126762,1.9148542155126762,1.9148542155126762,2.309401076758503
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Sports, Childhood",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Sports, Region",2.8284271247461903,2.8284271247461903,2.8284271247461903,2.8284271247461903
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Tourism, Art",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Tradition, Festival",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Tradition, Knowledge",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Tradition, Region",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Tribal, Nature",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Tribal, Tradition",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,"Urban Poverty, Religion",,,,
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,Water Crisis,,,,
+Stable Diffusion 3.5 Large,Daily Life & Social Context,1.9223002094465098,1.5491933384829666,1.7674302033770737,1.4074631010979934
+Stable Diffusion 3.5 Large,"Education, Youth & Women",1.7888543819998317,1.7888543819998317,1.7888543819998317,1.7888543819998317
+Stable Diffusion 3.5 Large,Indian Festivals & Rituals,1.7413380098407456,1.605183136974036,1.605183136974036,1.3304740847993173
+Stable Diffusion 3.5 Large,Occupations & Aspirations,1.5021352323976216,1.5021352323976216,1.5021352323976216,1.5021352323976216
+Stable Diffusion 3.5 Large,Regional Diversity,1.2744954391203698,1.372442306109034,1.3877773329774217,1.2577800213115893
+Stable Diffusion 3.5 Large,Religion & Spirituality,1.5021352323976216,1.395964880904226,1.4945294355141465,1.1297580609817643
+flux1-dev,"Arts, Music & Pop Culture",1.1547005383792515,1.1547005383792515,1.632993161855452,2.309401076758503
+flux1-dev,"Caste, Dance, Religion",,,,
+flux1-dev,"Caste, Tradition",,,,
+flux1-dev,"Culture, Attire",0.0,0.0,0.0,0.0
+flux1-dev,"Culture, Religion",0.0,0.0,0.0,0.0
+flux1-dev,Daily Life & Social Context,1.2403473458920846,1.2720981165907048,1.012739367083667,1.694637091472647
+flux1-dev,Diversity & Inclusion,2.0,2.0,1.9148542155126762,1.914854215512676
+flux1-dev,"Education, Youth & Women",1.8516401995451028,1.8516401995451028,1.4880476182856899,0.7071067811865476
+flux1-dev,Indian Festivals & Rituals,1.4605934866804429,1.3578211078487255,1.3493293353264106,1.7167196733251497
+flux1-dev,"Northeast, Economy",,,,
+flux1-dev,Occupations & Aspirations,2.1908902300206643,1.6733200530681511,1.6733200530681511,1.788854381999832
+flux1-dev,Regional Diversity,1.6962290477574484,1.5597270716416047,1.4265650070355171,1.7704527454797003
+flux1-dev,Religion & Spirituality,1.5446568914424659,0.9048278567177283,1.393384536958932,1.6754156331667822
+flux1-dev,"Signs, Language & Scripts",1.7888543819998317,1.7888543819998317,1.7888543819998317,1.6733200530681511
+flux1-dev,"Tribal, Rural",,,,
+flux1_1_pro,"Arts, Music & Pop Culture",1.7874018000453045,1.7874018000453045,1.738287957055741,1.9978343252987703
+flux1_1_pro,Caste,,,,
+flux1_1_pro,"Culture, Dance",,,,
+flux1_1_pro,"Culture, Gender",,,,
+flux1_1_pro,"Culture, Religion",,,,
+flux1_1_pro,Diversity & Inclusion,1.4348601079588787,1.3719886811400706,1.4245742398014511,1.6179144164088315
+flux1_1_pro,"Festival, Attire",,,,
+flux1_1_pro,"Festival, Food",0.0,0.0,0.0,0.0
+flux1_1_pro,"History, Education",,,,
+flux1_1_pro,Indian Festivals & Rituals,1.4142135623730951,1.4142135623730951,0.0,1.4142135623730951
+flux1_1_pro,"Irony, Global Awareness",,,,
+flux1_1_pro,"LGBTQ+, Religion",,,,
+flux1_1_pro,"Labor, Northeast",,,,
+flux1_1_pro,"Language Gap, Ritual",,,,
+flux1_1_pro,Language Hierarchy,0.0,0.0,0.0,0.0
+flux1_1_pro,Office Diversity,,,,
+flux1_1_pro,Pluralism,0.0,0.0,0.0,0.0
+flux1_1_pro,"Pluralism, Art",,,,
+flux1_1_pro,"Protest, Gender Gap",,,,
+flux1_1_pro,"Protest, Religion",,,,
+flux1_1_pro,"Region, Childhood",,,,
+flux1_1_pro,Religion,0.0,0.0,0.0,0.0
+flux1_1_pro,"Religion, Caste",,,,
+flux1_1_pro,"Religion, Region",0.0,0.0,0.0,0.0
+flux1_1_pro,"Rural, Culture",,,,
+flux1_1_pro,"Rural, Water Crisis",,,,
+flux1_1_pro,"Sports, Region",,,,
+openai_dalle_3,Caste,0.0,0.0,0.0,0.0
+openai_dalle_3,"Culture, Dance",,,,
+openai_dalle_3,"Culture, Gender",,,,
+openai_dalle_3,"Culture, Religion",,,,
+openai_dalle_3,"Education, Rural",0.0,0.0,0.0,0.0
+openai_dalle_3,"Education, Youth & Women",1.625020812387534,1.444499943433743,1.3059968245090439,1.715728108915554
+openai_dalle_3,"Festival, Attire",,,,
+openai_dalle_3,"Festival, Food",,,,
+openai_dalle_3,"History, Education",,,,
+openai_dalle_3,Indian Festivals & Rituals,1.9597081008292636,1.9597081008292636,1.959708100829264,1.8520797580556378
+openai_dalle_3,"LGBTQ+, Religion",,,,
+openai_dalle_3,"Labor, Gender",,,,
+openai_dalle_3,"Labor, Northeast",,,,
+openai_dalle_3,"Occupation, Culture",0.0,0.0,0.0,0.0
+openai_dalle_3,Occupations & Aspirations,1.932183566158592,1.3984117975602022,1.4142135623730951,1.9321835661585915
+openai_dalle_3,Pluralism,,,,
+openai_dalle_3,"Protest, Religion",,,,
+openai_dalle_3,"Region, Childhood",,,,
+openai_dalle_3,Regional Diversity,0.0,0.0,0.0,0.6666666666666669
+openai_dalle_3,Religion,2.3094010767585034,2.3094010767585034,2.3094010767585034,2.3094010767585034
+openai_dalle_3,"Religion, Austerity",,,,
+openai_dalle_3,"Religion, Region",0.0,0.0,0.0,2.8284271247461903
+openai_dalle_3,"Rural, Culture",,,,
+openai_dalle_3,"Rural, Water Crisis",,,,
+openai_dalle_3,"Signs, Language & Scripts",1.7888543819998317,1.7888543819998317,1.7888543819998317,0.0
+openai_dalle_3,"Sports, Region",,,,
+openai_dalle_3,"Tribal, Tradition",,,,
+openai_gpt_image_1,"Arts, Music & Pop Culture",1.7888543819998317,1.0954451150103321,0.894427190999916,1.7888543819998317
+openai_gpt_image_1,"Caste, Dance, Religion",0.0,0.0,0.0,0.0
+openai_gpt_image_1,"Caste, Tradition",,,,
+openai_gpt_image_1,"Culture, Religion",,,,
+openai_gpt_image_1,Daily Life & Social Context,0.41702882811414954,0.41702882811414954,0.0,1.6869646713465998
+openai_gpt_image_1,Diversity & Inclusion,1.4142135623730951,1.4142135623730951,1.4142135623730951,1.4880476182856899
+openai_gpt_image_1,"Education, Youth & Women",2.0,2.0,2.0,2.1908902300206643
+openai_gpt_image_1,Indian Festivals & Rituals,0.44721359549995787,0.6155870112510925,0.44721359549995787,1.6415653633362466
+openai_gpt_image_1,"Northeast, Economy",,,,
+openai_gpt_image_1,Occupations & Aspirations,1.7888543819998317,1.7888543819998317,1.7888543819998317,1.7888543819998317
+openai_gpt_image_1,Regional Diversity,1.1547005383792515,1.1547005383792515,0.879393730551528,1.5275252316519465
+openai_gpt_image_1,Religion & Spirituality,1.1769797726729996,0.9351250581921514,0.5884898863365,1.9429080716523301
+openai_gpt_image_1,"Signs, Language & Scripts",1.1094003924504583,1.1094003924504583,1.1094003924504583,1.1094003924504583
+sd_api_stable-diffusion-xl-1024-v1-0,"Arts, Music & Pop Culture",1.5859229221975182,1.5859229221975182,1.5859229221975182,0.0
+sd_api_stable-diffusion-xl-1024-v1-0,Daily Life & Social Context,0.8819171036881968,1.4142135623730951,1.4142135623730951,0.0
+sd_api_stable-diffusion-xl-1024-v1-0,Diversity & Inclusion,1.6403990645294486,1.618079669911781,1.5015143870590966,1.2933395813657265
+sd_api_stable-diffusion-xl-1024-v1-0,"Education, Youth & Women",1.4880476182856899,1.48804761828569,1.035098339013531,1.4142135623730951
+sd_api_stable-diffusion-xl-1024-v1-0,"Identity, Tradition",,,,
+sd_api_stable-diffusion-xl-1024-v1-0,Indian Festivals & Rituals,1.5859229221975182,1.7320508075688772,1.7320508075688772,1.3026778945578594
+sd_api_stable-diffusion-xl-1024-v1-0,"Nature Worship, Survival",,,,
+sd_api_stable-diffusion-xl-1024-v1-0,Occupations & Aspirations,0.0,1.0377490433255416,1.0377490433255416,0.0
+sd_api_stable-diffusion-xl-1024-v1-0,Regional Diversity,0.9847319278346618,1.0298573010888745,1.0298573010888745,1.1547005383792517
+sd_api_stable-diffusion-xl-1024-v1-0,Religion & Spirituality,1.5859229221975177,1.5859229221975177,1.5954480704349308,1.5569978883230458
+sd_api_stable-diffusion-xl-1024-v1-0,"Signs, Language & Scripts",0.8432740427115677,1.2649110640673518,1.2649110640673515,0.6324555320336759
+sd_turbo,"Art, History",,,,
+sd_turbo,"Art, Region",,,,
+sd_turbo,"Art, Regional",,,,
+sd_turbo,"Arts, Music & Pop Culture",0.0,0.0,0.0,0.0
+sd_turbo,"Attire, Region",,,,
+sd_turbo,Caste Discrimination,,,,
+sd_turbo,"Caste, Dance, Religion",,,,
+sd_turbo,"Caste, Festival",,,,
+sd_turbo,"Culture, Attire",,,,
+sd_turbo,"Culture, Dance",,,,
+sd_turbo,"Culture, Gender",,,,
+sd_turbo,"Culture, Marriage",,,,
+sd_turbo,"Culture, Oral Tradition",,,,
+sd_turbo,"Culture, Religion",,,,
+sd_turbo,Daily Life & Social Context,0.0,0.0,0.0,0.0
+sd_turbo,Diversity & Inclusion,0.0,0.0,0.0,0.0
+sd_turbo,"Education, Youth & Women",0.0,0.0,0.0,0.0
+sd_turbo,"Festival, Attire",,,,
+sd_turbo,"Festival, Food",,,,
+sd_turbo,"Folk, Festival",0.0,0.0,0.0,0.0
+sd_turbo,"Food, Religion",,,,
+sd_turbo,"Food, Tradition",,,,
+sd_turbo,"Handicraft, Culture",,,,
+sd_turbo,"Inclusion, Education",,,,
+sd_turbo,Indian Festivals & Rituals,0.0,0.0,0.0,0.0
+sd_turbo,"Labor, Gender",0.0,0.0,0.0,0.0
+sd_turbo,"Labor, Northeast",0.0,0.0,0.0,0.0
+sd_turbo,"Northeast, Economy",,,,
+sd_turbo,"Occupation, Culture",0.0,0.0,0.0,0.0
+sd_turbo,Occupations & Aspirations,0.0,0.0,0.0,0.0
+sd_turbo,"Patriotism, Culture",,,,
+sd_turbo,"Poverty, Culture",,,,
+sd_turbo,"Region, Childhood",,,,
+sd_turbo,Regional Culture,,,,
+sd_turbo,Regional Diversity,0.8,0.8,0.8,0.0
+sd_turbo,Religion,0.0,0.0,0.0,0.0
+sd_turbo,Religion & Spirituality,0.0,0.0,0.0,0.0
+sd_turbo,"Religion, Attire",,,,
+sd_turbo,"Religion, Austerity",,,,
+sd_turbo,"Religion, Caste",,,,
+sd_turbo,"Religion, Craft",,,,
+sd_turbo,"Religion, Culture",,,,
+sd_turbo,"Religion, Discipline",,,,
+sd_turbo,"Religion, Economy",,,,
+sd_turbo,"Religion, Minority",,,,
+sd_turbo,"Religion, Philosophy",,,,
+sd_turbo,"Religion, Poverty",,,,
+sd_turbo,"Religion, Region",,,,
+sd_turbo,"Religion, Theatre",,,,
+sd_turbo,"Rural, Culture",,,,
+sd_turbo,"Rural, Labor",,,,
+sd_turbo,"Rural, Water Crisis",,,,
+sd_turbo,"Signs, Language & Scripts",0.0,0.0,0.0,0.0
+sd_turbo,"Sports, Childhood",,,,
+sd_turbo,"Sports, Region",0.0,0.0,0.0,0.0
+sd_turbo,"Tourism, Art",,,,
+sd_turbo,"Tradition, Knowledge",,,,
+sd_turbo,"Tradition, Region",,,,
+sd_turbo,"Tribal, Nature",,,,
+sd_turbo,"Unity, Patriotism",,,,
+sd_turbo,"Urban Poverty, Religion",,,,
+sd_turbo,Water Crisis,,,,
+stable-diffusion-v1-5,"Arts, Music & Pop Culture",,,,
+stable-diffusion-v1-5,Daily Life & Social Context,0.0,0.0,0.0,0.0
+stable-diffusion-v1-5,"Education, Youth & Women",0.0,0.0,0.0,0.0
+stable-diffusion-v1-5,Indian Festivals & Rituals,0.0,0.0,0.0,0.0
+stable-diffusion-v1-5,Occupations & Aspirations,0.0,0.0,0.0,0.0
+stable-diffusion-v1-5,Regional Diversity,0.0,0.0,0.0,0.0
+stable-diffusion-v1-5,Religion & Spirituality,0.0,0.0,0.0,0.0
+stable-diffusion-v1-5,"Signs, Language & Scripts",0.0,0.0,0.0,0.0

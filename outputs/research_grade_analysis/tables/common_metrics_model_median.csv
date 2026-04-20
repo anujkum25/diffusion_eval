@@ -1,0 +1,12 @@
+model_name,Cultural Accuracy,Regional Accuracy,Social Accuracy,Bias Stereotype
+SD_api_free,5.0,3.0,5.0,1.0
+SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,3.0,3.0,3.0,1.0
+SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,3.0,3.0,3.0,1.0
+Stable Diffusion 3.5 Large,3.0,3.0,3.0,1.0
+flux1-dev,1.0,1.0,3.0,1.0
+flux1_1_pro,1.0,1.0,1.0,1.0
+openai_dalle_3,3.0,3.0,3.0,1.0
+openai_gpt_image_1,5.0,5.0,5.0,3.0
+sd_api_stable-diffusion-xl-1024-v1-0,1.0,1.0,1.0,1.0
+sd_turbo,1.0,1.0,1.0,1.0
+stable-diffusion-v1-5,1.0,1.0,1.0,1.0

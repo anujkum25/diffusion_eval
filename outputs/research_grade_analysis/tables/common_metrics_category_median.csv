@@ -1,0 +1,95 @@
+category,Cultural Accuracy,Regional Accuracy,Social Accuracy,Bias Stereotype
+"Art, History",3.0,3.0,3.0,3.0
+"Art, Region",5.0,5.0,5.0,5.0
+"Art, Regional",5.0,5.0,5.0,5.0
+"Art, Tribal",1.0,1.0,1.0,1.0
+"Arts, Music & Pop Culture",1.0,1.0,1.0,1.0
+"Attire, Region",3.0,3.0,3.0,3.0
+Caste,1.0,1.0,1.0,1.0
+Caste Discrimination,5.0,5.0,5.0,5.0
+"Caste, Dance, Religion",3.0,3.0,3.0,1.0
+"Caste, Festival",1.0,1.0,1.0,1.0
+"Caste, Tradition",1.0,1.0,3.0,5.0
+"Culture, Attire",3.0,3.0,3.0,3.0
+"Culture, Dance",1.0,1.0,1.0,1.0
+"Culture, Gender",1.0,1.0,1.0,1.0
+"Culture, Marriage",1.0,2.0,2.0,2.0
+"Culture, Oral Tradition",5.0,5.0,5.0,5.0
+"Culture, Region",5.0,5.0,5.0,5.0
+"Culture, Religion",1.0,1.0,1.0,1.0
+Daily Life & Social Context,3.0,1.0,3.0,1.0
+Diversity & Inclusion,1.0,1.0,1.0,3.0
+"Education, Rural",3.0,3.0,3.0,3.0
+"Education, Youth & Women",3.0,3.0,3.0,1.0
+"Festival, Attire",5.0,5.0,5.0,5.0
+"Festival, Food",1.0,1.0,1.0,1.0
+"Folk Dance, Culture",1.0,1.0,1.0,1.0
+"Folk, Festival",1.0,1.0,1.0,1.0
+"Food, Religion",1.0,1.0,1.0,1.0
+"Food, Tradition",3.0,3.0,3.0,3.0
+"Handicraft, Culture",1.0,1.0,1.0,1.0
+"History, Education",1.0,1.0,3.0,1.0
+"Identity, Tradition",5.0,5.0,5.0,3.0
+"Inclusion, Education",1.0,1.0,1.0,1.0
+Indian Festivals & Rituals,3.0,1.0,3.0,1.0
+"Irony, Global Awareness",1.0,1.0,1.0,1.0
+"LGBTQ+, Religion",5.0,5.0,5.0,5.0
+"LGBTQ+, Tradition",5.0,5.0,5.0,5.0
+"Labor, Gender",1.0,1.0,1.0,1.0
+"Labor, Northeast",1.0,1.0,1.0,1.0
+"Language Gap, Ritual",1.0,1.0,1.0,1.0
+Language Hierarchy,5.0,3.0,5.0,3.0
+"Music, Gender",3.0,3.0,3.0,1.0
+"Nature Worship, Survival",1.0,1.0,1.0,1.0
+"Northeast, Economy",1.0,1.0,1.0,1.0
+"Occupation, Culture",1.0,1.0,1.0,1.0
+"Occupation, Faith",1.0,1.0,1.0,1.0
+"Occupation, Religion",5.0,5.0,3.0,3.0
+Occupations & Aspirations,1.0,3.0,3.0,1.0
+Office Diversity,3.0,1.0,1.0,1.0
+"Patriotism, Culture",1.0,1.0,1.0,1.0
+Pluralism,1.0,1.0,1.0,1.0
+"Pluralism, Art",1.0,1.0,1.0,1.0
+"Pop Culture, Rural",3.0,3.0,3.0,1.0
+"Poverty, Culture",1.0,1.0,1.0,1.0
+"Protest, Gender Gap",1.0,1.0,1.0,1.0
+"Protest, Religion",3.0,3.0,3.0,4.0
+"Region, Childhood",5.0,5.0,5.0,5.0
+Regional Culture,3.0,3.0,3.0,3.0
+Regional Diversity,3.0,3.0,3.0,1.0
+Religion,5.0,5.0,5.0,5.0
+Religion & Spirituality,1.0,1.0,1.0,1.0
+"Religion, Attire",1.0,1.0,1.0,1.0
+"Religion, Austerity",1.0,1.0,1.0,3.0
+"Religion, Caste",1.0,1.0,1.0,1.0
+"Religion, Compassion",1.0,1.0,1.0,3.0
+"Religion, Craft",3.0,3.0,3.0,3.0
+"Religion, Culture",1.0,1.0,1.0,1.0
+"Religion, Discipline",1.0,1.0,1.0,1.0
+"Religion, Economy",1.0,1.0,1.0,1.0
+"Religion, Education",5.0,5.0,5.0,5.0
+"Religion, Minority",5.0,5.0,5.0,5.0
+"Religion, Philosophy",1.0,1.0,1.0,1.0
+"Religion, Plurality",1.0,1.0,1.0,1.0
+"Religion, Poverty",1.0,1.0,1.0,1.0
+"Religion, Region",1.0,1.0,3.0,3.0
+"Religion, Syncretism",1.0,1.0,1.0,1.0
+"Religion, Theatre",1.0,1.0,1.0,1.0
+"Ritual, Folk Dance",1.0,1.0,1.0,1.0
+"Ritual, Rural",5.0,5.0,5.0,5.0
+"Rural, Culture",1.0,3.0,3.0,1.0
+"Rural, Labor",2.0,2.0,2.0,1.0
+"Rural, Water Crisis",5.0,5.0,5.0,5.0
+"Signs, Language & Scripts",3.0,3.0,3.0,1.0
+"Sports, Childhood",3.0,3.0,3.0,3.0
+"Sports, Region",1.0,1.0,1.0,1.0
+"Tourism, Art",1.0,1.0,1.0,1.0
+"Tradition, Festival",1.0,1.0,1.0,1.0
+"Tradition, Knowledge",1.0,1.0,1.0,1.0
+"Tradition, Region",3.0,3.0,3.0,3.0
+"Tribal, Nature",5.0,5.0,3.0,3.0
+"Tribal, Rural",1.0,1.0,2.0,3.0
+"Tribal, Tradition",5.0,5.0,5.0,5.0
+"Unity, Patriotism",2.0,2.0,2.0,1.0
+"Urban Poverty, Religion",1.0,1.0,1.0,1.0
+Water Crisis,5.0,5.0,3.0,1.0

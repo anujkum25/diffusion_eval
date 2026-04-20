@@ -269,6 +269,30 @@ def word_frequency_table(df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(counter.most_common(100), columns=["word", "count"])
 
 
+def grouped_common_metric_stats(
+    df: pd.DataFrame,
+    group_specs: dict[str, list[str]],
+    common_cols: list[str],
+) -> dict[str, pd.DataFrame]:
+    """Notebook-inspired grouped mean/std/median tables for common metrics."""
+    tables: dict[str, pd.DataFrame] = {}
+    for group_name, group_cols in group_specs.items():
+        if not all(col in df.columns for col in group_cols):
+            continue
+        subset = df.dropna(subset=group_cols)
+        if subset.empty:
+            continue
+        grouped = subset.groupby(group_cols, dropna=False)[common_cols]
+        for stat_name, stat_df in {
+            "mean": grouped.mean(),
+            "median": grouped.median(),
+            "std": grouped.std(),
+        }.items():
+            renamed = stat_df.rename(columns={col: clean_metric_name(col) for col in common_cols})
+            tables[f"common_metrics_{group_name}_{stat_name}.csv"] = renamed.reset_index()
+    return tables
+
+
 def plot_model_ranking(model_scores: pd.DataFrame, model_col: str, out_path: Path) -> None:
     data = model_scores.sort_values("score_mean", ascending=True)
     fig, ax = plt.subplots(figsize=(9.5, max(5, 0.38 * len(data))))
@@ -502,6 +526,235 @@ def plot_word_frequencies(words: pd.DataFrame, out_path: Path) -> None:
     save_figure(fig, out_path)
 
 
+def plot_grouped_common_metric_heatmaps(
+    df: pd.DataFrame,
+    group_specs: dict[str, list[str]],
+    common_cols: list[str],
+    figures_dir: Path,
+) -> None:
+    """Create selected notebook-style mean/median/std heatmaps for common metrics."""
+    selected = {
+        "dataset": ("mean", "RdYlGn", 1, 5),
+        "super_category": ("median", "coolwarm", 1, 5),
+        "model_and_super_category": ("mean", "RdYlGn", 1, 5),
+        "dataset_and_super_category": ("std", "YlOrRd", 0, None),
+    }
+    for group_name, (stat_name, cmap, vmin, vmax) in selected.items():
+        group_cols = group_specs.get(group_name)
+        if not group_cols or not all(col in df.columns for col in group_cols):
+            continue
+        subset = df.dropna(subset=group_cols)
+        if subset.empty:
+            continue
+        grouped = subset.groupby(group_cols, dropna=False)[common_cols]
+        stat_df = getattr(grouped, stat_name)()
+        stat_df.columns = [clean_metric_name(c) for c in common_cols]
+        stat_df.index = [
+            " | ".join(str(part) for part in idx) if isinstance(idx, tuple) else str(idx)
+            for idx in stat_df.index
+        ]
+        if len(stat_df) > 24:
+            stat_df = stat_df.loc[stat_df.mean(axis=1).sort_values(ascending=False).head(24).index]
+        fig, ax = plt.subplots(figsize=(10.5, max(4.5, 0.36 * len(stat_df))))
+        sns.heatmap(
+            stat_df,
+            annot=True,
+            fmt=".2f",
+            cmap=cmap,
+            vmin=vmin,
+            vmax=vmax,
+            linewidths=0.5,
+            linecolor="white",
+            cbar_kws={"label": f"{stat_name.title()} score"},
+            ax=ax,
+        )
+        ax.set_title(f"{group_name.replace('_', ' ').title()} - Common Metric {stat_name.title()}")
+        ax.set_xlabel("")
+        ax.set_ylabel("")
+        save_figure(fig, figures_dir / f"common_metrics_{group_name}_{stat_name}_heatmap")
+
+
+def plot_model_composite_distribution(df: pd.DataFrame, model_col: str, out_path: Path) -> None:
+    data = df.dropna(subset=["com_mean_score"]).copy()
+    order = data.groupby(model_col)["com_mean_score"].median().sort_values(ascending=False).index
+    fig, ax = plt.subplots(figsize=(10, max(5, 0.42 * len(order))))
+    sns.violinplot(
+        data=data,
+        y=model_col,
+        x="com_mean_score",
+        order=order,
+        inner=None,
+        cut=0,
+        color="#b7d7ea",
+        linewidth=0.8,
+        ax=ax,
+    )
+    sns.boxplot(
+        data=data,
+        y=model_col,
+        x="com_mean_score",
+        order=order,
+        width=0.22,
+        showcaps=True,
+        boxprops={"facecolor": "#ffffff", "edgecolor": "#1f2937", "alpha": 0.85},
+        whiskerprops={"color": "#1f2937"},
+        medianprops={"color": "#b4235a", "linewidth": 1.5},
+        showfliers=False,
+        ax=ax,
+    )
+    ax.set_title("Common Composite Score Distribution by Model")
+    ax.set_xlabel("Common-metric composite score")
+    ax.set_ylabel("")
+    ax.set_xlim(0.8, 5.1)
+    save_figure(fig, out_path)
+
+
+def plot_bias_accuracy_tradeoff(df: pd.DataFrame, model_col: str, out_path: Path) -> None:
+    needed = ["r1_com_cultural_accuracy", "r1_com_bias_stereotype"]
+    if not all(col in df.columns for col in needed):
+        return
+    agg = (
+        df.groupby(model_col)
+        .agg(
+            cultural_accuracy=("r1_com_cultural_accuracy", "mean"),
+            bias_stereotype=("r1_com_bias_stereotype", "mean"),
+            common_composite=("com_mean_score", "mean"),
+            n=("com_mean_score", "count"),
+        )
+        .dropna()
+        .reset_index()
+    )
+    fig, ax = plt.subplots(figsize=(8.5, 6.5))
+    sizes = np.clip(agg["n"], 20, None) * 2.2
+    scatter = ax.scatter(
+        agg["bias_stereotype"],
+        agg["cultural_accuracy"],
+        s=sizes,
+        c=agg["common_composite"],
+        cmap="viridis",
+        vmin=1,
+        vmax=5,
+        alpha=0.82,
+        edgecolor="white",
+        linewidth=0.8,
+    )
+    for _, row in agg.iterrows():
+        ax.annotate(
+            str(row[model_col]),
+            (row["bias_stereotype"], row["cultural_accuracy"]),
+            xytext=(5, 4),
+            textcoords="offset points",
+            fontsize=7.5,
+        )
+    ax.set_title("Bias/Stereotype vs Cultural Accuracy Tradeoff")
+    ax.set_xlabel("Mean bias/stereotype metric rating")
+    ax.set_ylabel("Mean cultural accuracy rating")
+    ax.set_xlim(0.8, 5.1)
+    ax.set_ylim(0.8, 5.1)
+    fig.colorbar(scatter, ax=ax, label="Mean common composite")
+    save_figure(fig, out_path)
+
+
+def plot_metric_correlation_matrix(df: pd.DataFrame, metric_cols: list[str], out_path: Path) -> None:
+    cols = metric_cols + [
+        col
+        for col in ["com_mean_score", "dataset_specific_mean_score", "overall_mean_score"]
+        if col in df.columns
+    ]
+    corr = df[cols].corr(numeric_only=True)
+    corr.index = [clean_metric_name(c) if c in metric_cols else c.replace("_", " ").title() for c in corr.index]
+    corr.columns = [clean_metric_name(c) if c in metric_cols else c.replace("_", " ").title() for c in corr.columns]
+    fig, ax = plt.subplots(figsize=(12, 10))
+    sns.heatmap(
+        corr,
+        cmap="vlag",
+        center=0,
+        vmin=-1,
+        vmax=1,
+        linewidths=0.35,
+        linecolor="white",
+        cbar_kws={"label": "Pearson correlation"},
+        ax=ax,
+    )
+    ax.set_title("Metric and Composite Correlation Matrix")
+    ax.set_xlabel("")
+    ax.set_ylabel("")
+    save_figure(fig, out_path)
+
+
+def plot_category_super_category_flow_heatmap(
+    df: pd.DataFrame,
+    category_col: str,
+    super_col: str,
+    out_path: Path,
+    top_n_categories: int = 24,
+) -> None:
+    flow = (
+        df.dropna(subset=[category_col, super_col])
+        .groupby([category_col, super_col], dropna=False)
+        .size()
+        .reset_index(name="count")
+    )
+    if flow.empty:
+        return
+    top_categories = (
+        flow.groupby(category_col)["count"].sum().sort_values(ascending=False).head(top_n_categories).index
+    )
+    matrix = (
+        flow[flow[category_col].isin(top_categories)]
+        .pivot(index=category_col, columns=super_col, values="count")
+        .fillna(0)
+    )
+    matrix = matrix.loc[matrix.sum(axis=1).sort_values(ascending=True).index]
+    fig, ax = plt.subplots(figsize=(8.5, max(5, 0.34 * len(matrix))))
+    sns.heatmap(
+        matrix,
+        annot=True,
+        fmt=".0f",
+        cmap="YlGnBu",
+        linewidths=0.5,
+        linecolor="white",
+        cbar_kws={"label": "Prompt count"},
+        ax=ax,
+    )
+    ax.set_title("Category to Super-Category Flow Counts")
+    ax.set_xlabel("Super category")
+    ax.set_ylabel("Category")
+    save_figure(fig, out_path)
+
+
+def plot_dataset2_openai_comparison(
+    df: pd.DataFrame,
+    dataset_col: str,
+    model_col: str,
+    common_cols: list[str],
+    out_path: Path,
+) -> None:
+    focus_models = ["openai_dalle_3", "openai_gpt_image_1"]
+    focus = df[(df[dataset_col] == "dataset2") & (df[model_col].isin(focus_models))]
+    if focus.empty:
+        return
+    matrix = focus.groupby(model_col)[common_cols].mean()
+    matrix.columns = [clean_metric_name(c) for c in common_cols]
+    fig, ax = plt.subplots(figsize=(8.5, 3.2))
+    sns.heatmap(
+        matrix,
+        annot=True,
+        fmt=".2f",
+        cmap="RdYlGn",
+        vmin=1,
+        vmax=5,
+        linewidths=0.5,
+        linecolor="white",
+        cbar_kws={"label": "Mean score"},
+        ax=ax,
+    )
+    ax.set_title("Dataset2 Focus: OpenAI Model Common Metrics")
+    ax.set_xlabel("")
+    ax.set_ylabel("")
+    save_figure(fig, out_path)
+
+
 def write_summary(
     out_path: Path,
     csv_path: Path,
@@ -588,11 +841,24 @@ def main() -> None:
 
     df[model_col] = df[model_col].astype(str).str.strip().replace(MODEL_RENAMES)
     metric_groups = detect_metric_groups(df)
+    metric_cols = [col for cols in metric_groups.values() for col in cols]
     df = add_composites(df, metric_groups)
 
     common_score_col = "com_mean_score" if "com_mean_score" in df.columns else "overall_mean_score"
     model_scores = grouped_scores(df, [model_col], common_score_col, args.n_bootstrap)
     model_dataset_scores = grouped_scores(df, [dataset_col, model_col], "overall_mean_score", args.n_bootstrap)
+    group_specs = {
+        "dataset": [dataset_col],
+        "model": [model_col],
+        "dataset_and_model": [dataset_col, model_col],
+        "category": [category_col] if category_col else [],
+        "super_category": [super_col] if super_col else [],
+        "dataset_and_category": [dataset_col, category_col] if category_col else [],
+        "dataset_and_super_category": [dataset_col, super_col] if super_col else [],
+        "model_and_category": [model_col, category_col] if category_col else [],
+        "model_and_super_category": [model_col, super_col] if super_col else [],
+    }
+    group_specs = {name: cols for name, cols in group_specs.items() if cols and all(cols)}
 
     tables = {
         "cleaned_rows_with_composites.csv": df,
@@ -612,6 +878,16 @@ def main() -> None:
         tables["super_category_model_scores.csv"] = grouped_scores(
             df.dropna(subset=[super_col]), [super_col, model_col], "overall_mean_score", args.n_bootstrap
         )
+    if category_col and super_col:
+        tables["category_super_category_flow_counts.csv"] = (
+            df.dropna(subset=[category_col, super_col])
+            .groupby([category_col, super_col], dropna=False)
+            .size()
+            .reset_index(name="count")
+            .sort_values("count", ascending=False)
+        )
+    if "com" in metric_groups:
+        tables.update(grouped_common_metric_stats(df, group_specs, metric_groups["com"]))
     if prompt_col:
         prompt_cols = [c for c in [dataset_col, model_col, prompt_col, category_col, super_col] if c]
         tables["prompt_level_scores.csv"] = df[prompt_cols + ["com_mean_score", "dataset_specific_mean_score", "overall_mean_score"]]
@@ -628,9 +904,28 @@ def main() -> None:
         plot_common_metric_heatmap(df, model_col, metric_groups["com"], figures_dir / "common_metric_heatmap")
         plot_likert_common(df, metric_groups["com"], figures_dir / "common_metric_likert_distribution")
         plot_top_model_radar(df, model_scores, model_col, metric_groups["com"], figures_dir / "top_model_common_metric_radar")
+        plot_grouped_common_metric_heatmaps(df, group_specs, metric_groups["com"], figures_dir)
+        plot_model_composite_distribution(df, model_col, figures_dir / "model_common_composite_distribution")
+        plot_bias_accuracy_tradeoff(df, model_col, figures_dir / "bias_accuracy_tradeoff")
+        plot_dataset2_openai_comparison(
+            df,
+            dataset_col,
+            model_col,
+            metric_groups["com"],
+            figures_dir / "dataset2_openai_common_metric_comparison",
+        )
+
+    plot_metric_correlation_matrix(df, metric_cols, figures_dir / "metric_correlation_matrix")
 
     if category_col and df[category_col].notna().any():
         plot_category_heatmap(df.dropna(subset=[category_col]), category_col, model_col, figures_dir / "category_model_heatmap")
+    if category_col and super_col and df[[category_col, super_col]].notna().all(axis=1).any():
+        plot_category_super_category_flow_heatmap(
+            df,
+            category_col,
+            super_col,
+            figures_dir / "category_super_category_flow_heatmap",
+        )
 
     words = tables["manual_comment_word_frequencies.csv"]
     if not words.empty:

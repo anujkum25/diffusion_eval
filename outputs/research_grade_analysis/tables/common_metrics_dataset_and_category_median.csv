@@ -1,0 +1,105 @@
+dataset_name,category,Cultural Accuracy,Regional Accuracy,Social Accuracy,Bias Stereotype
+dataset2,"Arts, Music & Pop Culture",1.0,1.0,1.0,1.0
+dataset2,Daily Life & Social Context,3.0,3.0,3.0,1.0
+dataset2,Diversity & Inclusion,1.0,1.0,1.0,3.0
+dataset2,"Education, Youth & Women",3.0,3.0,3.0,1.0
+dataset2,Indian Festivals & Rituals,3.0,3.0,3.0,1.0
+dataset2,Occupations & Aspirations,5.0,3.0,3.0,1.0
+dataset2,Regional Diversity,3.0,3.0,3.0,1.0
+dataset2,Religion & Spirituality,1.0,1.0,3.0,1.0
+dataset2,"Signs, Language & Scripts",5.0,3.0,3.0,1.0
+dataset3,"Art, History",3.0,3.0,3.0,3.0
+dataset3,"Art, Region",5.0,5.0,5.0,5.0
+dataset3,"Art, Regional",5.0,5.0,5.0,5.0
+dataset3,"Art, Tribal",1.0,1.0,1.0,1.0
+dataset3,"Arts, Music & Pop Culture",1.0,1.0,1.0,1.0
+dataset3,"Attire, Region",3.0,3.0,3.0,3.0
+dataset3,Caste,1.0,1.0,1.0,1.0
+dataset3,Caste Discrimination,5.0,5.0,5.0,5.0
+dataset3,"Caste, Dance, Religion",3.0,3.0,3.0,1.0
+dataset3,"Caste, Festival",1.0,1.0,1.0,1.0
+dataset3,"Caste, Tradition",1.0,1.0,3.0,5.0
+dataset3,"Culture, Attire",3.0,3.0,3.0,3.0
+dataset3,"Culture, Dance",1.0,1.0,1.0,1.0
+dataset3,"Culture, Gender",1.0,1.0,1.0,1.0
+dataset3,"Culture, Marriage",1.0,2.0,2.0,2.0
+dataset3,"Culture, Oral Tradition",5.0,5.0,5.0,5.0
+dataset3,"Culture, Region",5.0,5.0,5.0,5.0
+dataset3,"Culture, Religion",1.0,1.0,1.0,1.0
+dataset3,Daily Life & Social Context,1.0,1.0,1.0,1.0
+dataset3,Diversity & Inclusion,5.0,5.0,5.0,5.0
+dataset3,"Education, Rural",3.0,3.0,3.0,3.0
+dataset3,"Education, Youth & Women",1.0,1.0,1.0,1.0
+dataset3,"Festival, Attire",5.0,5.0,5.0,5.0
+dataset3,"Festival, Food",1.0,1.0,1.0,1.0
+dataset3,"Folk Dance, Culture",1.0,1.0,1.0,1.0
+dataset3,"Folk, Festival",1.0,1.0,1.0,1.0
+dataset3,"Food, Religion",1.0,1.0,1.0,1.0
+dataset3,"Food, Tradition",3.0,3.0,3.0,3.0
+dataset3,"Handicraft, Culture",1.0,1.0,1.0,1.0
+dataset3,"History, Education",1.0,1.0,3.0,1.0
+dataset3,"Inclusion, Education",1.0,1.0,1.0,1.0
+dataset3,Indian Festivals & Rituals,1.0,1.0,1.0,1.0
+dataset3,"LGBTQ+, Religion",5.0,5.0,5.0,5.0
+dataset3,"LGBTQ+, Tradition",5.0,5.0,5.0,5.0
+dataset3,"Labor, Gender",1.0,1.0,1.0,1.0
+dataset3,"Labor, Northeast",1.0,1.0,1.0,1.0
+dataset3,"Music, Gender",3.0,3.0,3.0,1.0
+dataset3,"Northeast, Economy",1.0,1.0,1.0,1.0
+dataset3,"Occupation, Culture",1.0,1.0,1.0,1.0
+dataset3,"Occupation, Faith",1.0,1.0,1.0,1.0
+dataset3,"Occupation, Religion",5.0,5.0,3.0,3.0
+dataset3,Occupations & Aspirations,1.0,1.0,1.0,1.0
+dataset3,"Patriotism, Culture",1.0,1.0,1.0,1.0
+dataset3,Pluralism,1.0,1.0,1.0,1.0
+dataset3,"Pop Culture, Rural",3.0,3.0,3.0,1.0
+dataset3,"Poverty, Culture",1.0,1.0,1.0,1.0
+dataset3,"Protest, Religion",3.0,3.0,3.0,4.0
+dataset3,"Region, Childhood",5.0,5.0,5.0,5.0
+dataset3,Regional Culture,3.0,3.0,3.0,3.0
+dataset3,Regional Diversity,2.0,2.0,3.0,1.0
+dataset3,Religion,5.0,5.0,5.0,5.0
+dataset3,Religion & Spirituality,1.0,1.0,1.0,1.0
+dataset3,"Religion, Attire",1.0,1.0,1.0,1.0
+dataset3,"Religion, Austerity",1.0,1.0,1.0,3.0
+dataset3,"Religion, Caste",2.0,2.0,2.0,1.0
+dataset3,"Religion, Compassion",1.0,1.0,1.0,3.0
+dataset3,"Religion, Craft",3.0,3.0,3.0,3.0
+dataset3,"Religion, Culture",1.0,1.0,1.0,1.0
+dataset3,"Religion, Discipline",1.0,1.0,1.0,1.0
+dataset3,"Religion, Economy",1.0,1.0,1.0,1.0
+dataset3,"Religion, Education",5.0,5.0,5.0,5.0
+dataset3,"Religion, Minority",5.0,5.0,5.0,5.0
+dataset3,"Religion, Philosophy",1.0,1.0,1.0,1.0
+dataset3,"Religion, Plurality",1.0,1.0,1.0,1.0
+dataset3,"Religion, Poverty",1.0,1.0,1.0,1.0
+dataset3,"Religion, Region",1.0,1.0,3.0,3.0
+dataset3,"Religion, Syncretism",1.0,1.0,1.0,1.0
+dataset3,"Religion, Theatre",1.0,1.0,1.0,1.0
+dataset3,"Ritual, Folk Dance",1.0,1.0,1.0,1.0
+dataset3,"Ritual, Rural",5.0,5.0,5.0,5.0
+dataset3,"Rural, Culture",1.0,3.0,3.0,1.0
+dataset3,"Rural, Labor",2.0,2.0,2.0,1.0
+dataset3,"Rural, Water Crisis",5.0,5.0,5.0,5.0
+dataset3,"Signs, Language & Scripts",3.0,3.0,3.0,3.0
+dataset3,"Sports, Childhood",3.0,3.0,3.0,3.0
+dataset3,"Sports, Region",1.0,1.0,1.0,1.0
+dataset3,"Tourism, Art",1.0,1.0,1.0,1.0
+dataset3,"Tradition, Festival",1.0,1.0,1.0,1.0
+dataset3,"Tradition, Knowledge",1.0,1.0,1.0,1.0
+dataset3,"Tradition, Region",3.0,3.0,3.0,3.0
+dataset3,"Tribal, Nature",5.0,5.0,3.0,3.0
+dataset3,"Tribal, Rural",1.0,1.0,2.0,3.0
+dataset3,"Tribal, Tradition",5.0,5.0,5.0,5.0
+dataset3,"Unity, Patriotism",2.0,2.0,2.0,1.0
+dataset3,"Urban Poverty, Religion",1.0,1.0,1.0,1.0
+dataset3,Water Crisis,5.0,5.0,3.0,1.0
+dataset4,"Identity, Tradition",5.0,5.0,5.0,3.0
+dataset4,"Irony, Global Awareness",1.0,1.0,1.0,1.0
+dataset4,"Language Gap, Ritual",1.0,1.0,1.0,1.0
+dataset4,Language Hierarchy,5.0,3.0,5.0,3.0
+dataset4,"Nature Worship, Survival",1.0,1.0,1.0,1.0
+dataset4,Office Diversity,3.0,1.0,1.0,1.0
+dataset4,"Pluralism, Art",1.0,1.0,1.0,1.0
+dataset4,"Protest, Gender Gap",1.0,1.0,1.0,1.0
+dataset4,"Religion, Caste",1.0,1.0,1.0,1.0
