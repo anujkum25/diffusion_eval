@@ -532,14 +532,16 @@ def plot_grouped_common_metric_heatmaps(
     common_cols: list[str],
     figures_dir: Path,
 ) -> None:
-    """Create selected notebook-style mean/median/std heatmaps for common metrics."""
-    selected = {
-        "dataset": ("mean", "RdYlGn", 1, 5),
-        "super_category": ("median", "coolwarm", 1, 5),
-        "model_and_super_category": ("mean", "RdYlGn", 1, 5),
-        "dataset_and_super_category": ("std", "YlOrRd", 0, None),
+    """Create notebook-style mean/median/std heatmaps for common metrics."""
+    stat_specs = {
+        "mean": ("RdYlGn", 1, 5),
+        "median": ("coolwarm", 1, 5),
+        "std": ("YlOrRd", 0, None),
     }
-    for group_name, (stat_name, cmap, vmin, vmax) in selected.items():
+    for group_name, group_cols in group_specs.items():
+        if group_name in {"category", "dataset_and_category", "model_and_category"}:
+            # These can be huge; category/model heatmaps below provide clearer category views.
+            continue
         group_cols = group_specs.get(group_name)
         if not group_cols or not all(col in df.columns for col in group_cols):
             continue
@@ -547,31 +549,32 @@ def plot_grouped_common_metric_heatmaps(
         if subset.empty:
             continue
         grouped = subset.groupby(group_cols, dropna=False)[common_cols]
-        stat_df = getattr(grouped, stat_name)()
-        stat_df.columns = [clean_metric_name(c) for c in common_cols]
-        stat_df.index = [
-            " | ".join(str(part) for part in idx) if isinstance(idx, tuple) else str(idx)
-            for idx in stat_df.index
-        ]
-        if len(stat_df) > 24:
-            stat_df = stat_df.loc[stat_df.mean(axis=1).sort_values(ascending=False).head(24).index]
-        fig, ax = plt.subplots(figsize=(10.5, max(4.5, 0.36 * len(stat_df))))
-        sns.heatmap(
-            stat_df,
-            annot=True,
-            fmt=".2f",
-            cmap=cmap,
-            vmin=vmin,
-            vmax=vmax,
-            linewidths=0.5,
-            linecolor="white",
-            cbar_kws={"label": f"{stat_name.title()} score"},
-            ax=ax,
-        )
-        ax.set_title(f"{group_name.replace('_', ' ').title()} - Common Metric {stat_name.title()}")
-        ax.set_xlabel("")
-        ax.set_ylabel("")
-        save_figure(fig, figures_dir / f"common_metrics_{group_name}_{stat_name}_heatmap")
+        for stat_name, (cmap, vmin, vmax) in stat_specs.items():
+            stat_df = getattr(grouped, stat_name)()
+            stat_df.columns = [clean_metric_name(c) for c in common_cols]
+            stat_df.index = [
+                " | ".join(str(part) for part in idx) if isinstance(idx, tuple) else str(idx)
+                for idx in stat_df.index
+            ]
+            if len(stat_df) > 24:
+                stat_df = stat_df.loc[stat_df.mean(axis=1).sort_values(ascending=False).head(24).index]
+            fig, ax = plt.subplots(figsize=(10.5, max(4.5, 0.36 * len(stat_df))))
+            sns.heatmap(
+                stat_df,
+                annot=True,
+                fmt=".2f",
+                cmap=cmap,
+                vmin=vmin,
+                vmax=vmax,
+                linewidths=0.5,
+                linecolor="white",
+                cbar_kws={"label": f"{stat_name.title()} score"},
+                ax=ax,
+            )
+            ax.set_title(f"{group_name.replace('_', ' ').title()} - Common Metric {stat_name.title()}")
+            ax.set_xlabel("")
+            ax.set_ylabel("")
+            save_figure(fig, figures_dir / f"common_metrics_{group_name}_{stat_name}_heatmap")
 
 
 def plot_model_composite_distribution(df: pd.DataFrame, model_col: str, out_path: Path) -> None:
