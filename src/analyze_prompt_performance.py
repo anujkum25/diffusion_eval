@@ -48,6 +48,17 @@ RANDOM_SEED = 42
 MODEL_RENAMES = {
     "Stable Diffusion 3.5 large": "Stable Diffusion 3.5 Large",
     "SD_api_stable-diffusion-xl-1024-v1-0": "sd_api_stable-diffusion-xl-1024-v1-0",
+    "SD_api_iteration_2_stable-diffusion-xl-1024-v1-0": "sd_api_stable-diffusion-xl-1024-v1-0",
+}
+
+EXCLUDED_MODELS = {
+    "SD_api_iteration_1_stable-diffusion-xl-1024-v1-0",
+}
+
+DATASET_RENAMES = {
+    "dataset2": "Short Simple Prompts (SSP)",
+    "dataset3": "Detailed Indian Prompts (DIP)",
+    "dataset4": "Complex Indian Context Prompts (CIP)",
 }
 
 STOPWORDS = {
@@ -814,6 +825,12 @@ def main() -> None:
         default=["dataset2_hindi"],
         help="Dataset sources to exclude before analysis. Default: dataset2_hindi.",
     )
+    parser.add_argument(
+        "--exclude-models",
+        nargs="*",
+        default=sorted(EXCLUDED_MODELS),
+        help="Model names to exclude before analysis.",
+    )
     args = parser.parse_args()
 
     configure_style()
@@ -842,7 +859,13 @@ def main() -> None:
         removed = before - len(df)
         print(f"Excluded datasets {args.exclude_datasets}: removed {removed:,} rows.")
 
+    df[dataset_col] = df[dataset_col].astype(str).str.strip().replace(DATASET_RENAMES)
     df[model_col] = df[model_col].astype(str).str.strip().replace(MODEL_RENAMES)
+    if args.exclude_models:
+        before = len(df)
+        df = df[~df[model_col].isin(args.exclude_models)].copy()
+        removed = before - len(df)
+        print(f"Excluded models {args.exclude_models}: removed {removed:,} rows.")
     metric_groups = detect_metric_groups(df)
     metric_cols = [col for cols in metric_groups.values() for col in cols]
     df = add_composites(df, metric_groups)

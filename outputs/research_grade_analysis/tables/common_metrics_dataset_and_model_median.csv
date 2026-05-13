@@ -1,26 +1,25 @@
 dataset_name,model_name,Cultural Accuracy,Regional Accuracy,Social Accuracy,Bias Stereotype
-dataset2,SD_api_free,5.0,3.0,5.0,1.0
-dataset2,Stable Diffusion 3.5 Large,3.0,3.0,3.0,1.0
-dataset2,flux1-dev,2.0,1.0,3.0,1.0
-dataset2,flux1_1_pro,1.0,1.0,1.0,3.0
-dataset2,openai_dalle_3,5.0,3.0,3.0,1.0
-dataset2,openai_gpt_image_1,5.0,5.0,5.0,1.0
-dataset2,sd_api_stable-diffusion-xl-1024-v1-0,5.0,3.0,3.0,1.0
-dataset2,sd_turbo,1.0,1.0,1.0,1.0
-dataset2,stable-diffusion-v1-5,1.0,1.0,1.0,1.0
-dataset3,SD_api_iteration_1_stable-diffusion-xl-1024-v1-0,3.0,3.0,3.0,1.0
-dataset3,SD_api_iteration_2_stable-diffusion-xl-1024-v1-0,3.0,3.0,3.0,1.0
-dataset3,Stable Diffusion 3.5 Large,1.0,1.0,1.0,1.0
-dataset3,flux1-dev,1.0,1.0,3.0,3.0
-dataset3,flux1_1_pro,1.0,1.0,3.0,1.0
-dataset3,openai_dalle_3,3.0,3.0,3.0,3.0
-dataset3,openai_gpt_image_1,5.0,5.0,5.0,5.0
-dataset3,sd_turbo,1.0,1.0,1.0,1.0
-dataset3,stable-diffusion-v1-5,1.0,1.0,1.0,1.0
-dataset4,flux1-dev,1.0,1.0,1.0,1.0
-dataset4,flux1_1_pro,1.0,1.0,1.0,1.0
-dataset4,openai_dalle_3,3.0,3.0,3.0,3.0
-dataset4,openai_gpt_image_1,5.0,5.0,5.0,5.0
-dataset4,sd_api_stable-diffusion-xl-1024-v1-0,1.0,1.0,1.0,1.0
-dataset4,sd_turbo,1.0,1.0,1.0,1.0
-dataset4,stable-diffusion-v1-5,1.0,1.0,1.0,1.0
+Complex Indian Context Prompts (CIP),flux1-dev,1.0,1.0,1.0,1.0
+Complex Indian Context Prompts (CIP),flux1_1_pro,1.0,1.0,1.0,1.0
+Complex Indian Context Prompts (CIP),openai_dalle_3,3.0,3.0,3.0,3.0
+Complex Indian Context Prompts (CIP),openai_gpt_image_1,5.0,5.0,5.0,5.0
+Complex Indian Context Prompts (CIP),sd_api_stable-diffusion-xl-1024-v1-0,1.0,1.0,1.0,1.0
+Complex Indian Context Prompts (CIP),sd_turbo,1.0,1.0,1.0,1.0
+Complex Indian Context Prompts (CIP),stable-diffusion-v1-5,1.0,1.0,1.0,1.0
+Detailed Indian Prompts (DIP),Stable Diffusion 3.5 Large,1.0,1.0,1.0,1.0
+Detailed Indian Prompts (DIP),flux1-dev,1.0,1.0,3.0,3.0
+Detailed Indian Prompts (DIP),flux1_1_pro,1.0,1.0,3.0,1.0
+Detailed Indian Prompts (DIP),openai_dalle_3,3.0,3.0,3.0,3.0
+Detailed Indian Prompts (DIP),openai_gpt_image_1,5.0,5.0,5.0,5.0
+Detailed Indian Prompts (DIP),sd_api_stable-diffusion-xl-1024-v1-0,3.0,3.0,3.0,1.0
+Detailed Indian Prompts (DIP),sd_turbo,1.0,1.0,1.0,1.0
+Detailed Indian Prompts (DIP),stable-diffusion-v1-5,1.0,1.0,1.0,1.0
+Short Simple Prompts (SSP),SD_api_free,5.0,3.0,5.0,1.0
+Short Simple Prompts (SSP),Stable Diffusion 3.5 Large,3.0,3.0,3.0,1.0
+Short Simple Prompts (SSP),flux1-dev,2.0,1.0,3.0,1.0
+Short Simple Prompts (SSP),flux1_1_pro,1.0,1.0,1.0,3.0
+Short Simple Prompts (SSP),openai_dalle_3,5.0,3.0,3.0,1.0
+Short Simple Prompts (SSP),openai_gpt_image_1,5.0,5.0,5.0,1.0
+Short Simple Prompts (SSP),sd_api_stable-diffusion-xl-1024-v1-0,5.0,3.0,3.0,1.0
+Short Simple Prompts (SSP),sd_turbo,1.0,1.0,1.0,1.0
+Short Simple Prompts (SSP),stable-diffusion-v1-5,1.0,1.0,1.0,1.0
